@@ -4,19 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bukka Plate - Home</title>
+    <script src="https://kit.fontawesome.com/bbcd28ecea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- topbar - Mobile: hamburger menu, logo, phone icon linked to contact page
                   Desktop: 5 horizontal tabs (home, about, services, menu, contact us) -->
+    <div class="nav-bg" id="top">
+        <div class="wrapper">
+            <div class="navbar">
+                <label class="hamburger-menu">
+                    <input type="checkbox">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <aside class="sidebar">
+                    <nav>
+                        <div>Home</div>
+                        <div>About</div>
+                        <div>Contact</div>
+                    </nav>
+                </aside>
+                <img src="#" alt="Bukkaplate's logo">
+                <a href="contact.html"><i class="fa-solid fa-phone-flip"></i></a>
+            </div>
+        </div>
 
+    </div>
     <!-- banner - Mobile: mission statement & call to action button linked to contact page 
-                  Desktop: includes larger logo in top left of banner -->
-
+                  Desktop: includes larger logo in top left of banner -->    
+    <header role="banner">   
+        <div class="banner">
+            <div class="wrapper">
+                <p class="mission"></p>
+                <a href="contact.html" class="book-btn">BOOK A PLATE</a>
+            </div>
+        </div>   
+    </header>
     <!-- slideshow/carousel - 3 customer testimonial cards with arrow buttons and radio buttons, book and event button under -->
+    <main>
+        <div class="reviews">
+            <div class="wrapper">
 
-    <!-- skiplink - back to top -->
+            </div>
+        </div>        
+    </main>
     <!-- footer section - Mobile: contact info in a column above yellow bg(copy & socials)
                           Desktop: 3 columns - nav, contact info, socials, and copy all yellow bg -->
+    <footer>
+        <section role="complementary">
+            <h4>CONTACT US</h4>
+            <ul itemscope itemtype="https://schema.org/Organization">
+                <li itemprop="email">email@email.com</li>
+                <li itemprop="telephone">(613)-xxx-xxxx</li>
+                <li itemprop="address">123 Street Dr.</li>
+                <li itemprop="address">City, ON, A1B2C3</li>
+            </ul>
+        </section>
+        <div class="footbar">
+            <p class="copy">&copy; Bukka Plate 2023</p>
+            <div class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="skiplinks"><i class="fa-solid fa-chevron-up"></i></a>
+    <!-- skiplink - back to top -->                          
 </body>
 </html>
+
+
+<!-- include references.txt file with links to images -->
