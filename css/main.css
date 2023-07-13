@@ -85,6 +85,7 @@ p {
 
 .wrapper {
 	width: 80%;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -456,4 +457,26 @@ form button {
 .social-section a {
 	color: white;
 	font-size: 2.5rem;
+}
+
+/* button animations */
+
+@keyframes btn-press {
+	5% {
+		transform: scale(2);
+	}
+	
+	25% {
+		transform: scale(.5);
+	}
+
+	100% {
+		transform: scale(100);
+		opacity: 0;
+	}
+}
+
+.book-btn:active {
+	animation-name: btn-press;
+	animation-duration: 1s;
 }
