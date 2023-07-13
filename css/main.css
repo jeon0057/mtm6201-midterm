@@ -269,8 +269,8 @@ footer {
 	background-color: #d9a340;
 	color: #2e3140;
 	/* button stays in the same spot on the page always */
-	position: absolute;
-	bottom: 0;
+	position: fixed;
+	bottom: 100px;
 	right: 20px;
 	border-radius: 50%;
 	padding: 5px;
@@ -339,6 +339,12 @@ footer {
 	margin-bottom: 20px;
 }
 
+.fact h2,
+.fact p {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
 .fact1 {
 	/* dims the background image  */
 	background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
@@ -361,10 +367,16 @@ footer {
 	text-align: center;
 }
 
+.bukka img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
 .bukka-bg {
 	background-color: #2e3140;
-	padding: 20px;
-	margin-bottom: 30px;
+	padding: 0 0 20px 0;
+	margin: 20px 0;
 }
 
 /* contact page */
@@ -411,7 +423,19 @@ form button {
 	padding: 10px;
 }
 
+.where {
+	text-align: center;
+	margin: 20px;
+}
+
+iframe {
+	width: 100%;
+	height: 14rem;
+}
+
+/* lays out contact info under the form */
 .location-grid {
+	color: white;
 	display: grid;
 	width: 100%;
 	grid-template-areas: 
@@ -421,7 +445,16 @@ form button {
 		"follow social"
 	;
 	grid-template-columns: repeat(2, 1fr);	
+	grid-gap: 10px;
 }
+
+.location-grid li,
+.location-grid p,
+.location-grid td {
+	font-size: .75rem;
+	font-weight: 300;
+}
+
 
 
 /* assigns area names */
@@ -457,6 +490,7 @@ form button {
 .social-section a {
 	color: white;
 	font-size: 2.5rem;
+	margin: .3em;
 }
 
 /* button animations */
@@ -479,4 +513,29 @@ form button {
 .book-btn:active {
 	animation-name: btn-press;
 	animation-duration: 1s;
+}
+
+@media screen and (min-width:700px) {
+	html {
+		font-size: 20px;
+	}
+
+	.cards {
+		grid-column: span 1;
+		width: 100%;
+		height: auto;
+	}
+
+	.cards-grid {
+		max-width: 800px;
+		margin: 30px auto;
+	}
+
+	.hero-txt {
+		left: calc(50%-300px);
+	}
+
+	.skiplinks {
+		bottom: 7rem;
+	}
 }
