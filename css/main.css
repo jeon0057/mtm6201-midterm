@@ -53,6 +53,11 @@ table {
     box-sizing: border-box;
 }
 
+body {
+	background-color: black;
+	font-family: 'Poppins', sans-serif;;
+}
+
 html {
     font-size: 16px;
 }
@@ -99,4 +104,21 @@ html {
 	top: 25px;
 	right: 30px;
 	font-size: 1.25rem;
+}
+
+.logo {
+	width: 150px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #2e3140;
+	padding: 10px;
+}
+
+.hamburger, .call {
+	font-size: 1.25rem;
+	color: #d9a340;
 }
