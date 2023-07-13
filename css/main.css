@@ -75,6 +75,12 @@ h3 {
 	margin-bottom: 15px;
 }
 
+p {
+	font-size: .75rem;
+	line-height: 1.5em;
+	font-weight: lighter;
+}
+
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
@@ -222,8 +228,8 @@ footer {
 	background-color: #d9a340;
 	color: #2e3140;
 	/* button stays in the same position always */
-	position: fixed;
-	bottom: 125px;
+	position: absolute;
+	bottom: -60px;
 	right: 20px;
 	border-radius: 50%;
 	padding: 5px;
@@ -257,6 +263,7 @@ footer {
 
 .about-content {
 	width: 80%;
+	max-width: 400px;
 	margin: auto;
 	line-height: 1.5em;
 	display: flex;
@@ -305,4 +312,16 @@ footer {
 .fact img {
 	width: 80%;
 	margin-bottom: 10px;
+}
+
+/* what's a bukka section */
+.bukka h2 {
+	color: #d9a340;
+	text-align: center;
+}
+
+.bukka-bg {
+	background-color: #2e3140;
+	padding: 20px;
+	margin-bottom: 30px;
 }

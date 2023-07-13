@@ -20,18 +20,18 @@
                     <li><a class="close" href="#"><i class="fa-solid fa-x"></i></a></li>
                 </ul>
                 
-                <a class="hamburger" href="#nav">
+                <a class="hamburger" aria-label="menu" href="#nav">
                     <i class="fa-solid fa-bars"></i>
                 </a>
                 <a href="index.html"><img src="images/bukka-logo.png" alt="Bukkaplate's logo" class="logo"></a>
-                <a href="contact.html" class="call"><i class="fa-solid fa-phone-flip"></i></a>
+                <a href="contact.html" class="call" aria-label="contact"><i class="fa-solid fa-phone-flip"></i></a>
             </div>
     </div>
     <!-- about blurb - Mobile: h1, p, and contact button in vertical, centered column
                        Desktop: h1, p, with 2 info cards in 2 columns -->
     <section class="about-bg">
         <div class="wrapper">
-            <div class="about-content">
+            <div class="about-content" role="main">
                 <h1>About Us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi nobis placeat voluptate et aut id quia asperiores porro cumque accusantium, quod quis earum cum fugit dolorem harum itaque dicta!</p>
                 <div class="btn-bg"><a href="contact.html" class="contact-btn btn">CONTACT US</a></div>
@@ -39,7 +39,7 @@
         </div>
     </section>
     <!-- facts section - Mobile: 2 equal columns, each contain img, h3, and p with bg image -->
-    <div class="facts-grid">
+    <div class="facts-grid" role="complementary">
         <div class="fact fact1">
             <img src="" alt="">
             <h3>Local Farms</h3>
@@ -60,9 +60,13 @@
                                    Desktop: col1-img, col2-h2, p -->
     <section class="bukka">
         <h2>What's a Bukka?</h2>
-        <img src="" alt="">
-        <p>Also called mama put, is a common word in Nigeria for a hole-in-the-wall street restaurant that serves freshly made meals at affordable prices. </p>
-        <a href="contact.html" class="btn">BOOK A PLATE</a>
+        <div class="bukka-bg">
+            <img src="" alt="">
+            <div class="wrapper">
+                <p>Also called mama put, is a common word in Nigeria for a hole-in-the-wall street restaurant that serves freshly made meals at affordable prices. </p>
+            </div>
+        </div>
+        <div class="btn-bg"><a href="contact.html" class="btn">BOOK A PLATE</a></div>
     </section>                      
     <!-- footer section - Mobile: contact info in a column above yellow bg(copy & socials)
                           Desktop: 3 columns - nav, contact info, socials & copy all yellow bg -->
@@ -87,7 +91,7 @@
             </div>
         </div>
         <!-- skiplink - back to top -->
-        <a href="#top" class="skiplinks"><i class="fa-solid fa-chevron-up"></i></a>        
+        <a href="#top" class="skiplinks" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></a>        
     </footer>
 </body>
 </html>
