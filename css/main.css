@@ -65,6 +65,16 @@ html {
     font-size: 16px;
 }
 
+h2 {
+	font-size: 1.25rem;
+}
+
+h3 {
+	font-size: 1.1rem;
+	line-height: 1.5em;
+	margin-bottom: 15px;
+}
+
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
@@ -265,4 +275,34 @@ footer {
 
 .contact-btn {
 	margin: 20px;
+}
+
+/* facts section */
+.facts-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.fact {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5em;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.fact1 {
+	/* dims the background image  */
+	background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+				url(../images/farming.jpg);
+}
+
+.fact2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+				url(../images/crop.jpg);	
+}
+
+.fact img {
+	width: 80%;
+	margin-bottom: 10px;
 }
