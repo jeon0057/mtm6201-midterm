@@ -147,10 +147,40 @@ p {
 	color: #d9a340;
 }
 
+/* styles home page banner */
+.hero {
+	width: 100%;
+	/* background-color:#2e3140; */
+	margin-bottom: 30px;
+	background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+	url(../images/food-spread.jpg);
+	background-size: cover;
+}
+
+.hero-txt {
+	padding-top: 40%;
+	display: flex;
+	justify-content: center;
+	height: 300px;
+	flex-direction: column;
+	color: white;
+}
+
+.hero .btn-bg {
+	margin-bottom: 30px;
+}
+
+.mission {
+	font-size: 1rem;
+	line-height: 1.7em;
+	text-align: center;
+	margin-bottom: auto;
+}
+
 /* styles testimonial cards */
 .cards-grid {
 	display: grid;
-	grid-template-columns: 1;
+	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 20px;
 	margin-bottom: 30px;
 	width: 100%;
@@ -162,15 +192,19 @@ p {
 	max-width: 300px;
 	margin: auto;
 	padding: 15px;
-	font-size: small;
+	font-size: 1rem;
 	line-height: 1.25em;
 	background-color: #2e3140;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	grid-column: span 2;
 }
 
 .pfp {
 	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+	margin-bottom: 15px;
 }
 
 
@@ -182,6 +216,7 @@ p {
 /* footer styling */
 footer {
 	border-top: 1px solid rgba(255, 255, 255, 0.356);
+	padding-top: 20px;
 }
 
 .contact-info {
@@ -227,9 +262,9 @@ footer {
 .skiplinks {
 	background-color: #d9a340;
 	color: #2e3140;
-	/* button stays in the same position always */
+	/* button stays in the same spot on the page always */
 	position: absolute;
-	bottom: -60px;
+	bottom: 0;
 	right: 20px;
 	border-radius: 50%;
 	padding: 5px;
