@@ -497,24 +497,25 @@ iframe {
 
 /* button animations */
 
-@keyframes btn-press {
-	5% {
-		transform: scale(2);
+@keyframes btn-pulse {
+	0% {
+		transform: scale(1.25);
 	}
 	
 	25% {
-		transform: scale(.5);
+		transform: scale(1);
+		opacity: .7;
 	}
 
 	100% {
-		transform: scale(100);
-		opacity: 0;
+		transform: scale(1.25);
 	}
 }
 
-.book-btn:active {
-	animation-name: btn-press;
+.book-btn:hover {
+	animation-name: btn-pulse;
 	animation-duration: 1s;
+	animation-iteration-count: infinite;
 }
 
 /* breakpoint */
@@ -522,7 +523,6 @@ iframe {
 	html {
 		font-size: 20px;
 	}
-
 
 
 	.cards {
