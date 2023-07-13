@@ -421,6 +421,8 @@ form button {
 .form-content {
 	background-color: rgba(0, 0, 0, 0.582);
 	padding: 10px;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 .where {
