@@ -49,6 +49,8 @@ table {
 }
 /* end of css reset */
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -61,6 +63,11 @@ body {
 
 html {
     font-size: 16px;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
 }
 
 /* nav menu - open */
@@ -122,4 +129,66 @@ html {
 .hamburger, .call {
 	font-size: 1.25rem;
 	color: #d9a340;
+}
+
+
+
+
+
+/* footer styling */
+footer {
+	border-top: 1px solid rgba(255, 255, 255, 0.356);
+}
+
+.contact-info {
+	text-align: center;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.contact-info h4 {
+	font-size: 1rem;
+}
+
+.contact-info li {
+	font-size: .75rem;
+}
+
+/* yellow part of footer */
+.footbar {
+	background-color: #d9a340;
+	text-align: center;
+	padding: 1rem;
+}
+
+.copy {
+	font-size: .5rem;
+	color: black;
+	margin-bottom: 1rem;
+}
+
+.socials {
+	font-size: 1.5rem;
+	display: flex;
+	width: 70%;
+	max-width: 300px;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.socials a {
+	color: black;
+}
+
+.skiplinks {
+	background-color: #d9a340;
+	color: #2e3140;
+	/* button stays in the same position always */
+	position: fixed;
+	bottom: 125px;
+	right: 20px;
+	border-radius: 50%;
+	padding: 5px;
+	/* ensure button is not overlapped by anything */
+	z-index: 99;
 }

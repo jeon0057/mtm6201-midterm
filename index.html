@@ -14,14 +14,13 @@
     <!-- topbar - Mobile: hamburger menu, logo, phone icon linked to contact page
                   Desktop: 5 horizontal tabs (home, about, services, menu, contact us) -->
     <div class="nav-bg" id="top">
-        <div class="wrapper">
             <div class="navbar">
                 <ul class="nav" id="nav">
                     <li><a href="index.html" class="nav-item">Home</a></li>
                     <li><a href="about.html" class="nav-item">About</a></li>
                     <li><a href="contact.html" class="nav-item">Contact</a></li>
                     <!-- x button closes nav menu -->
-                    <li><a class="close" href="#"><i class="fa-solid fa-x"></i></a></li>
+                    <li></li><a class="close" href="#"><i class="fa-solid fa-x"></i></a>
                 </ul>
                 <a class="hamburger" href="#nav">
                     <i class="fa-solid fa-bars"></i>
@@ -29,8 +28,6 @@
                 <a href="index.html"><img src="images/bukka-logo.png" alt="Bukkaplate's logo" class="logo"></a>
                 <a href="contact.html" class="call"><i class="fa-solid fa-phone-flip"></i></a>
             </div>
-        </div>
-
     </div>
     <!-- banner - Mobile: mission statement & call to action button linked to contact page 
                   Desktop: includes larger logo in top left of banner -->    
@@ -53,7 +50,7 @@
     <!-- footer section - Mobile: contact info in a column above yellow bg(copy & socials)
                           Desktop: 3 columns - nav, contact info, socials, and copy all yellow bg -->
     <footer>
-        <section role="complementary">
+        <section role="complementary" class="contact-info">
             <h4>CONTACT US</h4>
             <ul itemscope itemtype="https://schema.org/Organization">
                 <li itemprop="email">email@email.com</li>
@@ -72,9 +69,9 @@
                 <a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
+        <!-- skiplink - back to top -->          
+        <a href="#top" class="skiplinks"><i class="fa-solid fa-chevron-up"></i></a>        
     </footer>
-    <!-- skiplink - back to top -->    
-    <a href="#top" class="skiplinks"><i class="fa-solid fa-chevron-up"></i></a>
 </body>
 </html>
 
