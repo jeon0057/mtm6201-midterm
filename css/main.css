@@ -131,9 +131,37 @@ html {
 	color: #d9a340;
 }
 
+/* styles testimonial cards */
+.cards-grid {
+	display: grid;
+	grid-template-columns: 1;
+	grid-gap: 20px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+/* styles individual cards */
+.cards {
+	width: 80%;
+	max-width: 300px;
+	margin: auto;
+	padding: 15px;
+	font-size: small;
+	line-height: 1.25em;
+	background-color: #2e3140;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.pfp {
+	height: 75px;
+}
 
 
-
+.reviewers {
+	margin-top: auto;
+	grid-column: 1 / span 2;
+}
 
 /* footer styling */
 footer {
@@ -191,4 +219,21 @@ footer {
 	padding: 5px;
 	/* ensure button is not overlapped by anything */
 	z-index: 99;
+}
+
+.btn {
+	background-color: #d9a340;
+	padding: .7rem;
+	text-decoration: none;
+	margin-bottom: 30px;
+	text-align: center;
+	display: inline-block;
+	color: #2e3140;
+}
+
+.btn-bg {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	
 }
