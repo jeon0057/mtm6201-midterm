@@ -155,13 +155,16 @@ p {
 	background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
 	url(../images/food-spread.jpg);
 	background-size: cover;
+	position: relative;
+	height: 300px;
 }
 
 .hero-txt {
-	padding-top: 40%;
+	position: absolute;
+	top: 30%;
+	left: calc(50% - 100px);
 	display: flex;
 	justify-content: center;
-	height: 300px;
 	flex-direction: column;
 	color: white;
 }
@@ -359,4 +362,48 @@ footer {
 	background-color: #2e3140;
 	padding: 20px;
 	margin-bottom: 30px;
+}
+
+/* contact page */
+#contact {
+	background: url(../images/dining.jpg);
+	width: 100%;
+	background-size: cover;
+	padding: 20px;
+}
+
+#contact h2 {
+	color: black;
+	text-align: center;
+	margin: 20px;
+}
+
+#contact h1 {
+	font-size: 1.5rem;
+	margin: 20px 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+form label {
+	display: block;
+	font-size: 1rem;
+	line-height: 1.7em;
+}
+
+form textarea {
+	margin-bottom: 10px;
+}
+
+form button {
+	margin: 10px auto;
+	padding: 0 10px;
+}
+
+.form-content {
+	background-color: rgba(0, 0, 0, 0.582);
+	padding: 10px;
 }
