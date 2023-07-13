@@ -67,6 +67,8 @@ html {
 
 h2 {
 	font-size: 1.25rem;
+	color: white;
+	font-weight: 200;
 }
 
 h3 {
@@ -406,4 +408,50 @@ form button {
 .form-content {
 	background-color: rgba(0, 0, 0, 0.582);
 	padding: 10px;
+}
+
+.location-grid {
+	display: grid;
+	width: 100%;
+	grid-template-areas: 
+		"heading heading"
+		"map map"
+		"hours info"
+		"follow social"
+	;
+	grid-template-columns: repeat(2, 1fr);	
+}
+
+.location-grid .where {
+	grid-area: heading;
+}
+
+.location-grid .map {
+	grid-area: map;
+}
+
+.location-grid .hours {
+	grid-area: hours;
+}
+
+.location-grid .info {
+	grid-area: info;
+}
+
+.location-grid .follow-us {
+	grid-area: follow;
+}
+
+.location-grid .social-section {
+	grid-area: social;
+}
+
+.social-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.social-section a {
+	color: white;
+	font-size: 2.5rem;
 }
