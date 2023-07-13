@@ -57,6 +57,46 @@ html {
     font-size: 16px;
 }
 
+/* nav menu - open */
 .nav {
     background-color: antiquewhite;
+	position: absolute;
+	/* moves navbar on top of hamburger icon */
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 300px;
+	/* full height of viewport */
+	height: 100vh;
+	background: #2e3140;
+	/* slide in animation left to right */
+	transform: translateX(-100%);
+	/* slide-in animation of the nav menu */
+	transition: transform .3s ease-in;
+	padding: 3rem 3rem;
+}
+
+.nav:target {
+	/* triggers nav menu open animation */
+	transform: translateX(0);
+}
+
+.nav a {
+	color: rgba(255, 255, 255, 0.712);
+}
+
+.nav li {
+	margin-bottom: 1rem;
+}
+
+.nav-item {
+	text-decoration: none;
+}
+
+/* x icon to close nav menu */
+.close {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	font-size: 1.25rem;
 }
