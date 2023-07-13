@@ -56,12 +56,23 @@
                 <strong>vegetarian</strong> options.</p>
         </div>
     </div>
-    <!-- what's a bukka? section - Mobile: h2, img, p, button arranged vertically, bg color behind p
-                                   Desktop: col1-img, col2-h2, p -->
+    <!-- what's a bukka? section - Mobile: h2, img, p, button arranged vertically, bg color behind p -->
     <section class="bukka">
         <h2>What's a Bukka?</h2>
         <div class="bukka-bg">
-            <img src="" alt="">
+            <img src="images/market.jpg"
+                 alt="a market full of ingredients"
+                 srcset="
+                    images/sm-market.png 240w,
+                    images/m-market.png 300w,
+                    images/lg-market.png 720w
+                 "
+                 sizes="
+                    (min-width: 960px) 720px,
+                    100vw
+                 "
+                 >
+            </img>
             <div class="wrapper">
                 <p>Also called mama put, is a common word in Nigeria for a hole-in-the-wall street restaurant that serves freshly made meals at affordable prices. </p>
             </div>

@@ -422,6 +422,8 @@ form button {
 	grid-template-columns: repeat(2, 1fr);	
 }
 
+
+/* assigns area names */
 .location-grid .where {
 	grid-area: heading;
 }
