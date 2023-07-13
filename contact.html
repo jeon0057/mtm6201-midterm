@@ -4,19 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/bbcd28ecea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- topbar - Mobile: hamburger menu, logo, phone icon linked to contact page
                   Desktop: 5 horizontal tabs (home, about, services, menu, contact us) -->
 
     <!-- Contact form section - Mobile: h2, form(h1, 5 inputs, submit button) with translucent black bg
-                                Desktop: col1-form, col2-h3, book now button  -->
-
-    <!-- map section - Mobile: h2, interactive map, col1r1-business hours col1r2-@, col2-contact info col2r2-socials
-                       Desktop:  -->
-
+                                Desktop: col1-form, col2-h2  -->
+    <section id="contact">
+        <div class="wrapper">
+            <div class="form-grid">
+                <h2>Book an Event Online</h2>
+                <div class="form-content">
+                    <h1>Contact Us</h1>
+                    <form action="#" method="get" id="contact-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <label for="f-name">First Name</label>
+                        <input type="text" id="f-name" name="fname">
+                        <label for="l-name">Last Name</label>
+                        <input type="text" id="l-name" name="lname">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <button type="submit" form="contact-form">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- map section - Mobile: h2, interactive map, col1r1-business hours col1r2-@, col2-contact info col2r2-socials  -->    
+    <section id="location">
+        <div class="wrapper">
+            <h2>Where can you find us?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518045113!2d-75.75712548445941!3d45.34993154908186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1681008811754!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="location-grid">
+                <section class="hours">
+                    <h3>Business Hours</h3>
+                    <table>
+                        <tbody>
+                            <thead>
+                            <tr>
+                                <td>Mon - Fri:</td>
+                                <td>9am - 5pm</td>    
+                            </tr>
+                            <tr>
+                                <td>Sat - Sun:</td>
+                                <td>9am - 9pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <ul itemscope itemtype="https://schema.org/Organization" class="info">
+                    <li itemprop="email">email@email.com</li>
+                    <li itemprop="telephone">(613)-xxx-xxxx</li>
+                    <li itemprop="address">123 Street Dr.</li>
+                    <li itemprop="address">City, ON, A1B2C3</li>
+                </ul>
+                <div class="follow-us">
+                    <h3>Follow Us:</h3>
+                    <p>@BukkaPlate on all social media</p>
+                </div>
+                <div class="social-section"></div>
+            </div>
+        </div> 
+    </section>
     <!-- skiplink - back to top -->
     <!-- footer section - Mobile: contact info in a column above yellow bg(copy & socials)
                           Desktop: 3 columns - nav, contact info, socials & copy all yellow bg -->
+    <footer>
+        <div class="footbar">
+            <p class="copy">&copy; Bukka Plate 2023</p>
+        </div>
+    </footer>
+    <!-- skiplink - back to top -->    
+    <a href="#top" class="skiplinks"><i class="fa-solid fa-chevron-up"></i></a>
 </body>
 </html>
